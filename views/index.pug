@@ -1,0 +1,75 @@
+//- index.pug
+doctype html
+html
+  head
+    title 
+        |Music
+    style
+      include ../static/style.css
+  body
+    nav.navigation
+        ul
+            div.logo
+                img(src="/static/logo2.jpg", alt="")
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/service") Services]
+            li #[a(href="/") Contact]
+            li #[a()#log Login/Sign Up]
+    div.container#budy
+        div.content
+            h3 Welcome To the Musical World 
+            h6 Learn the Way you like...
+    div.trending
+        h1 Trending nowadays..
+    div.trend
+        div.card#card1  
+                img(src="/static/guitar.jpg", alt="")
+                p Apply here to start Learning  Guitar =>
+                button.but#apl Apply Now
+        div.card#card2  
+                img(src="/static/piano.jpg", alt="")
+                p Apply here to start Learning  Piano =>
+                button.but#apl1 Apply Now
+        div.card#card3  
+                img(src="/static/drum.jpg", alt="")
+                p Apply here to start Learning  Drum =>
+                button.but#apl2 Apply Now
+    div.login#logform
+        form(action="").log
+             input(type="email", placeholder="Enter Your E-mail id") 
+             input(type="password", placeholder="Enter your password")
+             button#loog Login
+             a#res1 new user? resister here.
+    div.signup#signform 
+        form(action="").sign
+             input(type="email", placeholder="Enter Your E-mail id") 
+             input(type="text", placeholder="Enter Your Full Name") 
+             input(type="password", placeholder="Enter your password")
+             input(type="cpassword", placeholder="Re-Enter your password")
+             button#resister Sign Up
+             a#res2 already a user? login here.
+    div.admission#adm
+        form(action="").apply
+             input(type="email", placeholder="Enter Your E-mail id") 
+             input(type="text", placeholder="Enter Your Full Name") 
+             input(type="number", placeholder="Enter Your Mobile no") 
+             input(type="text", placeholder="Enter Your Address") 
+             input(type="text", placeholder="Enter Your Address Line 2") 
+             
+
+             button#done Apply Now
+
+    div.feed
+        h1 Give your Feedback Here
+        form(action="")
+            input(type="email", placeholder="Enter Your E-mail id") 
+            label(for="") ..Are you a Member of our academy?  
+            input(type="checkbox", name="check" )
+            textarea(name="", cols="30", rows="10",placeholder="Write your review here...")
+                |Write your review here... 
+            button#btn Submit
+    footer.foot 
+        p musical world academy &copy;.All rights reserved.
+    script(src='../static/index.js')
+            

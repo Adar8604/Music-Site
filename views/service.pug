@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title 
+        |Music
+    style
+      include ../static/style.css
+  body
+    nav.navigation
+        ul
+            div.logo
+                img(src="/static/logo2.jpg", alt="")
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/service") Services]
+            li #[a(href="/") Contact]
+    div.trending
+        h1 Our Services..
+    div.trend
+        div.card#card1  
+                img(src="/static/guitar.jpg", alt="")
+                p Apply here to start Learning  Guitar =>
+                button.but Apply Now
+        div.card#card2  
+                img(src="/static/piano.jpg", alt="")
+                p Apply here to start Learning  Piano =>
+                button.but Apply Now
+        div.card#card3  
+                img(src="/static/drum.jpg", alt="")
+                p Apply here to start Learning  Drum =>
+                button.but Apply Now
+    div.trend
+        div.card#card1  
+                img(src="/static/violin.jpeg", alt="")
+                p Apply here to start Learning  Violin =>
+                button.but Apply Now
+        div.card#card2  
+                img(src="/static/trumpet3.jpg", alt="")
+                p Apply here to start Learning  Trumpet =>
+                button.but Apply Now
+        div.card#card3  
+                img(src="/static/hur.jpg", alt="")
+                p Apply here to start Learning  
+                    span.hr Harmonium =>
+                button.but Apply Now
+    div.feed
+        h1 Give your Feedback Here
+        form(action="")
+            input(type="email", placeholder="Enter Your E-mail id") 
+            label(for="") ..Are you a Member of our academy?  
+            input(type="checkbox", name="check" )
+            textarea(name="", cols="30", rows="10", placeholder="Write your review here...")
+               | Write your review here... 
+            button#btn Submit
+    footer.foot 
+        p musical world academy &copy;.All rights reserved.
+    script(src='../static/index.js')

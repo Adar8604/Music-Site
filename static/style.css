@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Neonderthaw&family=Roboto+Mono:ital,wght@1,100&family=Source+Serif+4:ital,wght@1,200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+} 
+@media (max-width:700px){
+    .navigation ul{
+        flex-direction: column;
+        
+    }
+}
+.navigation ul a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  
+}
+.logo img{
+    width: 35px;
+    border-radius: 50%;
+}
+.container{
+    background: url("../static/back.jpg");
+    height: 600px;
+}
+.container .content{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+.container .content h3{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Neonderthaw', cursive;;
+}
+.container .content h6{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Neonderthaw', cursive;;
+}
+.trend {
+    background-color: #eaedf4;
+    display: flex;
+}
+@media  (max-width:1450px){
+    .trend{
+        display: grid;
+        justify-content: center;
+        
+    }
+}
+ .card{
+    border: 2px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    box-shadow: 20px 15px 16px black;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    height: 13rem;
+    margin: 23px;
+    margin-left: 65px;
+}
+@media (max-width:1450px){
+    .card{
+        width: auto;
+        margin-left: 0px;
+    }
+}
+.trending h1{
+    background-color:#eaedf4 ;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+}
+#card1 img p{
+    display: flex;
+    flex-direction: row;
+}
+#card1 img{
+    width: 165px;
+}
+#card2 img{
+    width: 207px;
+}
+#card3 img{
+    width: 227px;
+}
+.card p{
+    display: inline;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 23px;
+    font-family: 'Libre Baskerville', serif;
+}
+.feed{
+    background-color: #eaedf4;
+}
+form{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    font-size: 20px;
+    padding: 5px;
+
+}
+form input , textarea{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 7px;
+    width: 95%;
+    font-size: 20px;
+    border-radius: 8px;
+    
+}
+#btn{
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #0000b2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.feed h1{
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+}
+.foot{
+    background-color: #3b3a3a;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+.but{
+    background-color: #0000b2;
+    color: white;
+    width: 60px;
+    height: 49px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 139px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.hr{
+    font-size: 18px;
+}
+
+.login{
+    border: 2px solid grey;
+    top: 2rem;
+    width: 24rem;
+    position: absolute;
+    left: 35rem;
+    height: 15rem;
+    background-color: #1b0909;
+    border-radius: 27px;
+    opacity: 0.9;
+    visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+
+}
+.login input{
+    width: 90%;
+}
+.log{
+    margin: 0px;
+    margin-top: 10px;
+    width: 100%;
+}
+#loog ,#resister{
+    padding: 8px;
+    font-size: 20px;
+    background-color: #00229e;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+.pass{
+    color: white;
+    font-size: 15px;
+    padding: 60px;
+}
+.login_change{
+   visibility: visible;
+    top: 15rem;
+    width: 30rem;
+    transform: translate(-30%,-50%) scale(1);
+}
+#res1 , #res2{
+    color: #ffd600;
+    font-size: 17px;
+    padding: 15px;
+    cursor: pointer;
+}
+#res1:hover , #res2:hover{
+    color: rgb(172, 255, 179);
+    text-decoration: underline;
+}
+.signup{
+    border: 2px solid grey;
+    top: 7.5rem;
+    width: 30rem;
+    position: absolute;
+    left: 26rem;
+    height: 19rem;
+    background-color: #1b0909;
+    border-radius: 27px;
+    opacity: 0.9;
+    visibility: hidden;
+}
+.sign{
+    margin: 0px;
+    margin-top: 10px;
+    width: 93%;
+}
+.admission{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #002626;
+    padding: 20px;
+    visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+}
+.admission_open{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    
+}
+#done{
+    padding: 10px;
+    color: white;
+    background: green;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 65%;
+}
+.admission form{
+    width: fit-content;
+}
